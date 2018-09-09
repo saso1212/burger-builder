@@ -1,0 +1,48 @@
+.NavigationItem{
+    margin:10px  0;
+    box-sizing: border-box;
+    width: 100;
+    /* da moze da go centrira linkot vertikalno dispaly flax */
+    display: block;
+ 
+}
+.NavigationItem a{
+    color: rgb(141, 85, 85);
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    /* za da ima efekt height mora display block */
+    display: block;
+}
+
+.NavigationItem a:active, .NavigationItem a:hover, .NavigationItem a.active{
+    
+    color: rgb(86, 98, 165);
+
+}
+@media (min-width:500px){
+    .NavigationItem{
+        margin: 0;
+        height: 100;
+        width: auto;
+        /* da moze da go centrira linkot vertikalno dispaly flax */
+        display: flex;
+        align-items: center;
+    }
+    .NavigationItem a{
+        color: white;
+        text-decoration: none;
+        height: 100%;
+        padding: 16px 10px;
+        border-bottom: 4px solid transparent;
+        /* za da ima efekt height mora display block */
+        /* display: block; */
+    }
+    
+    .NavigationItem a:active, .NavigationItem a:hover, .NavigationItem a.active{
+        border-bottom: 4px solid #40A4C8;
+        background-color: #8F5C2C;
+        color: white;
+    
+    }
+}
